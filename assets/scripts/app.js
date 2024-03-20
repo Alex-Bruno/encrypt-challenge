@@ -50,7 +50,7 @@ const  encryptAction = (value) => {
 
   value = encryptText(value)
 
-  document.querySelector('.right-content .box .box-content').textContent = value;
+  document.querySelector('.right-content .box .box-content').innerHTML = `<p class="message-text">${value}</p>`;
 
   document.querySelector('.right-content .box .button-group').style.display = 'block'
 }
@@ -66,7 +66,7 @@ const  decryptAction = (value) => {
 
   value = decryptText(value)
 
-  document.querySelector('.right-content .box .box-content').textContent = value;
+  document.querySelector('.right-content .box .box-content').innerHTML = `<p>${value}</p>`;
 
   document.querySelector('.right-content .box .button-group').style.display = 'block'
 }
