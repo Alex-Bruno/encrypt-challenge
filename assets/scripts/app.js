@@ -26,7 +26,7 @@ const encryptText = (value) => {
   value = value.replace('e', 'enter')
   value = value.replace('i', 'imes')
   value = value.replace('a', 'ai')
-  value = value.replace('o', 'obter')
+  value = value.replace('o', 'ober')
   value = value.replace('u', 'ufat')
   return value;
 }
@@ -35,7 +35,7 @@ const decryptText = (value) => {
   value = value.replace(/enter/g, 'e')
   value = value.replace(/imes/g, 'i')
   value = value.replace(/ai/g, 'a')
-  value = value.replace(/obter/g, 'o')
+  value = value.replace(/ober/g, 'o')
   value = value.replace(/ufat/g, 'u')
   return value;
 }
