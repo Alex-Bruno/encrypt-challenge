@@ -1,0 +1,225 @@
+body, html {
+    font-family: Inter, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #F3F5FC;
+    height: 100%;
+    width: 100%;
+}
+
+.left-content {
+    margin: 40px 40px;
+}
+
+.left-content .input-field {
+    display: block;
+    text-align: center;
+}
+
+.left-content .header {
+    width: 100%;
+    display: block;
+}
+
+.left-content .input-group {
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content .input-group textarea {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #0A3871;
+    text-align: left;
+}
+
+.transparent-textarea {
+    width: 80%;
+    height: 200px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    resize: none; /* Impede redimensionamento */
+    outline: none; /* Remove o contorno quando focado */
+}
+
+.left-content .input-group textarea::placeholder {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #0A3871;
+    text-align: left;
+}
+
+.right-content {
+    height: 100%;
+}
+
+.right-content .box {
+    border-radius: 32px;
+    box-shadow: #000;
+    background-color: #FFFFFF;
+}
+
+.right-content .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    margin: 5%;
+}
+
+.right-content .box .box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #495057;
+    max-width: 85%;
+    max-height: 60%;
+    text-align: justify;
+}
+
+.right-content .box .message {
+    max-width: 70%;
+    text-align: center;
+}
+
+.right-content .box .message .box-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #343A40;
+}
+
+.right-content .box .message .box-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+}
+
+.right-content .box .button-group {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+}
+
+footer {
+    position: fixed;
+    bottom: 40px;
+    width: 73%;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-container p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #495057;
+    align-self: flex-start;
+}
+
+footer .footer-container p img {
+    width: 12px;
+    top: -2px;
+}
+
+.blue-button {
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #0A3871;
+    color: white;
+    width: 328px;
+    cursor: pointer;
+}
+
+.grey-button {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    width: 328px;
+    cursor: pointer;
+}
+
+.white-button {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: white;
+    color: #0A3871;
+    width: 328px;
+    cursor: pointer;
+}
+
+.reload-button {
+    display: inline-block;
+    border: 1px solid #dc3545;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #dc3545;
+    color: #FFF;
+    width: 328px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .left-content {
+        width: 70%;
+    }
+    .right-content {
+        width: 30%;
+    }
+}
+
+/* Estilos para tablet */
+@media (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .left-content {
+        width: 100%;
+    }
+    .right-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .box {
+        text-align: center;
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+    .input-field {
+        width: 100%;
+    }
+}
