@@ -54,8 +54,8 @@ body, html {
     padding: 10px;
     border: none;
     background-color: transparent;
-    resize: none; /* Impede redimensionamento */
-    outline: none; /* Remove o contorno quando focado */
+    resize: none;
+    outline: none;
 }
 
 .left-content .input-group textarea::placeholder {
@@ -221,6 +221,10 @@ footer .footer-container p img {
         text-align: center;
     }
 
+    footer {
+        margin-top: 50%!important;
+    }
+
     aside.right-content {
         position: relative;
         margin-bottom: 40px;
@@ -246,7 +250,7 @@ footer .footer-container p img {
         max-height: 200px!important;
         margin: 40px;
         text-align: justify;
-        overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+        overflow-y: auto;
         cursor: pointer;
     }
 
@@ -274,16 +278,110 @@ footer .footer-container p img {
     aside .box .box-content img {
         display: none;
     }
-
-    footer {
-        margin-top: 50%!important;
-    }
-
 }
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 600px) {
-    .input-field {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .left-content {
         width: 100%;
+    }
+
+    .right-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .box {
+        text-align: center;
+    }
+
+    .left-content {
+        max-height: 15%!important;
+        margin: 20px 0;
+    }
+
+    .left-content .input-group {
+        margin: 40px 0;
+        height: 100px !important;
+    }
+
+    .left-content .input-group textarea {
+        width: 90%!important;
+        height: 100px !important;
+    }
+
+    footer {
+       text-align: center;
+        margin-top: 30%!important;
+    }
+
+    footer .content p {
+        text-align: left;
+        margin-left: 40px!important;
+    }
+
+    .blue-button {
+        margin-bottom: 10px!important;
+    }
+
+    .right-content {
+        position: relative;
+        margin-bottom: 40px;
+        width: 100% !important;
+        background-color: transparent;
+        padding: 32px;
+        max-height: 700px!important;
+        height: auto!important;
+    }
+
+    .right-content .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        max-height: 400px!important;
+        margin: 0!important;
+    }
+
+
+    aside .box .box-content {
+        width: 100% !important;
+        max-height: 200px!important;
+        text-align: justify;
+        overflow-y: auto;
+        cursor: pointer;
+        margin:  0!important;
+    }
+
+    aside .box .box-content .message {
+        max-width: 100%!important;
+        max-height: 200px!important;
+    ;
+    }
+
+    aside .box .box-content p {
+        max-width: 100%!important;
+    }
+
+    aside .box .button-group {
+        display: flex;
+        position: relative!important;
+        margin-top: 40px;
+    }
+
+    aside .box .btn-copy {
+        position: relative !important;
+        width: 328px!important;
+    }
+
+    aside .box .box-content img {
+        display: none;
     }
 }

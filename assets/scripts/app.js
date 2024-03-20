@@ -32,11 +32,11 @@ const encryptText = (value) => {
 }
 
 const decryptText = (value) => {
-  value = value.replace('enter', 'e')
-  value = value.replace('imes', 'i')
-  value = value.replace('ai', 'a')
-  value = value.replace('obter', 'o')
-  value = value.replace('ufat', 'u')
+  value = value.replace(/enter/g, 'e')
+  value = value.replace(/imes/g, 'i')
+  value = value.replace(/ai/g, 'a')
+  value = value.replace(/obter/g, 'o')
+  value = value.replace(/ufat/g, 'u')
   return value;
 }
 
