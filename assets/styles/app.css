@@ -222,7 +222,7 @@ footer .footer-container p img {
     }
 
     footer {
-        margin-top: 50%!important;
+        margin-top: 45%!important;
     }
 
     aside.right-content {
@@ -230,7 +230,7 @@ footer .footer-container p img {
         margin-bottom: 40px;
         width: 90% !important;
         background-color: transparent;
-        padding: 32px;
+        padding: 40px;
         max-height: 700px!important;
         height: auto!important;
     }
